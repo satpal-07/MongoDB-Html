@@ -1,0 +1,38 @@
+<%- include('./components/header.ejs') %>
+
+<body>
+  <main>
+  
+  </main>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">firstName</th>
+        <th scope="col">lastName</th>
+        <th scope="col">dateOfbirth</th>
+        <th scope="col">email</th>
+        <th scope="col">phone</th>
+        <th scope="col">purpose</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <%userList.forEach(user => {%>
+      <tr>
+        <th scope="row"><%= user._id %></th>
+        <td><%= user.firstName %></td> 
+        <td><%= user.lastName %></td> 
+        <td><%= user.dateOfbirth %></td>
+        <td><%= user.email %></td>
+        <td><%= user.phone %></td>
+        <td><%= user.purpose %></td>
+        
+      </tr>
+    <%})%>
+     
+     
+    </tbody>
+  </table>
+</body>
+</html>
