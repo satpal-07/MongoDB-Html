@@ -10,8 +10,8 @@ const notFound = require('./controllers/notFound');
 const errorMiddleware = require('./middlewares/errorMiddleware');
 
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.DB_URL || 'mongodb+srv://Pragra:Pragra123-$@cluster0.jfhji.mongodb.net/studentpage';
-
+const MONGO_URI = process.env.DB_URL || 'mongodb+srv://*******@cluster0.jfhji.mongodb.net/studentpage';
+// ******** use the username and the password provided in the email
 // set the view engine
 app.set('view engine', 'ejs');
 app.set('views', 'views');
